@@ -1,0 +1,24 @@
+.main
+  .main_header
+    .main_header__group_box
+      .main_header__group_box--name 磯家
+      .main_header__group_box--member Member: カツオ
+    = link_to"#",class: "edit" do 
+      Edit
+  .main_chat
+    .main_chat__messages
+      .main_chat__messages--info
+        .name マスオ
+        .date 2000
+      .main_chat__messages--text サザウェ
+  .main_form
+    .form_box
+      .form_box__text
+        %input.message{type: "text",placeholder: "type a message"}
+        %label{class:"image"}
+          =icon('fas','image')
+          %input{type: "file", class: "none"}
+      %input.send{type: "submit",value: "send"}
+      
+
+  

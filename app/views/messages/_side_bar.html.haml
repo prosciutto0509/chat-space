@@ -1,0 +1,17 @@
+.side_main
+  .side_main__header
+    .user_box 
+      .user_box__name カツオ
+      .user_box__icon
+        .user_box__icon--edit
+          = link_to "#",style: "color:white" do
+            =icon('fas','edit')
+        .user_box__icon--config    
+          = link_to "#", style: "color:white" do
+            =icon('fas','cog')  
+
+  .side_main__groups
+    .side_main__groups--group_box
+      .group_name 中島達
+      .group_message 野球しようぜ
+
