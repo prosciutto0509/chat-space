@@ -55,6 +55,7 @@
     &__groups{
       height: calc(100vh - 100px);
       background-color: #2f3e51;
+      overflow: scroll;
       &--group_box{
         
         height: 80px;
@@ -126,8 +127,9 @@
     
     .main_chat{
       background-color: #fafafa;
-      height: calc(100vh - 190px);
+      height: calc(100vh - 100px - 90px);
       padding: 0 40px;
+      overflow: scroll;
 
       &__messages{
         display: flex;
