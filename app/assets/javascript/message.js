@@ -2,40 +2,40 @@ $(function(){
  function buildHTML(message){
    if(message.image){
      let html =
-      `<div class="MessageBox">
-         <div class="MessageInfo">
-           <div class="MessageInfo__userName">
-            ${message.user_name}
-            </div>
-              <div class="MessageInfo__date">
-               ${message.created_at}
-              </div>
-             </div>
-             <div class="Message">
-              <p class="Message__content">
-                ${message.content}
-              </p>
-             <img class="image" src="${message.image}">
-            </div>
-           </div>`
+  `<div class="MessageBox">
+<div class="MessageInfo">
+<div class="MessageInfo__userName">
+${message.user_name}
+</div>
+<div class="MessageInfo__date">
+${message.created_at}
+</div>
+</div>
+<div class="Message">
+<p class="Message__content">
+${message.content}
+</p>
+<img class="image" src="${message.image}">
+</div>
+</div>`
 return html;
    }else{
   let html =
-`<div class="MessageBox">
-  <div class="MessageInfo">
-    <div class="MessageInfo__userName">
-     ${message.user_name}
-     </div>
-       <div class="MessageInfo__date">
-        ${message.created_at}
-       </div>
-      </div>
-      <div class="Message">
-       <p class="Message__content">
-         ${message.content}
-       </p>
-     </div>
-    </div>`
+    `<div class="MessageBox">
+<div class="MessageInfo">
+<div class="MessageInfo__userName">
+${message.user_name}
+</div>
+<div class="MessageInfo__date">
+${message.created_at}
+</div>
+</div>
+<div class="Message">
+<p class="Message__content">
+${message.content}
+</p>
+</div>
+</div>`
 return html;
   };
   }
@@ -59,8 +59,8 @@ return html;
   $('.main_chat').animate({ scrollTop: $('.main_chat')[0].scrollHeight});
   $('.send').prop('disabled', false);
 })
-.fail(function(){
+.fail(function() {
   alert("メッセージ送信に失敗しました");
-   });
+});
   });
 });
