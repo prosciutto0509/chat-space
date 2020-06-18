@@ -11,12 +11,7 @@
     = link_to edit_group_path(@group), class: "edit" do 
       Edit
   .main_chat
-    .main_chat__messages
-      .main_chat__messages--info
-        .name
-        .date 
-      .main_chat__messages--text 
-        = render @messages
+    = render @messages
   .main_form 
     = form_with model: [@group, @message], html: {class: "form_box"}, local: true do |f|
       .form_box__text
