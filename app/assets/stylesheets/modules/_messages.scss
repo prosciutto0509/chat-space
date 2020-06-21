@@ -130,7 +130,10 @@
       height: calc(100vh - 100px - 90px);
       padding: 0 40px;
       overflow: scroll;
-
+     
+      .MessageBox{
+        margin-bottom: 46px;
+      }
       &__messages{
         display: flex;
         flex-direction: column;
